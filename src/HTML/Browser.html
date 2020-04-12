@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>browser</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/browser.css" type="text/css">
+</head>
+<body>
+<header id="header">
+    <nav>
+        <h2>
+            <a href="../../index.html" ><img src="../../img/images/photo.jpg" class="header-photo"></a>
+            <a href="../../index.html" class="home">首页</a>
+            <a href="Browser.html" class="browser">浏览页</a>
+            <a href="search.html" class="search">搜索页</a>
+        </h2>
+        <ul class="nav">
+            <a href="#">个人中心</a>
+            <ul class="plat">
+                <li><a href="upload.html"><img src="../../img/images/upload.jpg" class="plat-photo">上传 </a></li>
+                <li><a href="my_photo.html"><img src="../../img/images/photo%20(2).jpg" class="plat-photo">我的照片</a></li>
+                <li><a href="my_favorite.html"><img src="../../img/images/collect2.jpg" class="plat-photo">我的收藏</a></li>
+                <li><a href="sign_in.html"><img src="../../img/images/sign.jpg" class="plat-photo">登入</a></li>
+            </ul>
+        </ul>
+    </nav>
+</header>
+<aside >
+    <ul >
+        <li class="li-title">标题浏览</li>
+            <script type="text/javascript">
+                function disp_alert()
+                {
+                    alert("你要的图片来了。")
+                }
+            </script>
+        <li><input type="text" name="text"><input type="button" class="button-search" value="搜索"></li>
+        <li class="li-title">热门国家快速浏览</li>
+        <li onclick="disp_alert()" class="li-content">中国</li>
+        <li onclick="disp_alert()" class="li-content">英国 </li>
+        <li onclick="disp_alert()" class="li-content">日本</li>
+        <li onclick="disp_alert()" class="li-content">意大利</li>
+        <li class="li-title">热门城市快速浏览</li>
+        <li onclick="disp_alert()" class="li-content">上海</li>
+        <li onclick="disp_alert()" class="li-content">武汉</li>
+        <li onclick="disp_alert()" class="li-content">北京</li>
+        <li class="li-title">热门内容快速浏览</li>
+        <li onclick="disp_alert()" class="li-content">田园</li>
+        <li onclick="disp_alert()" class="li-content">海天</li>
+        <li onclick="disp_alert()" class="li-content">山峰</li>
+    </ul>
+</aside>
+<section>
+    <div class="section-header">
+        图片浏览
+    </div>
+    <div class="section-select">
+        <select>
+            <option selected>主题</option>
+            <option>浪漫</option>
+            <option>探险</option>
+            <option>田园</option>
+        </select>
+        <select id="first" onChange="nextChange()">
+            <option selected="selected">国家</option>
+            <option>中国</option>
+            <option>美国</option>
+            <option>意大利</option>
+        </select>
+        <select id="second">
+            <option>城市</option>
+        </select>
+        <script>
+            function nextChange()
+            {
+                var first = document.getElementById("first");
+                var second = document.getElementById("second");
+                second.options.length = 0; // 清除second下拉框的所有内容
+                if(first.selectedIndex == 1)
+                {
+                    second.options.add(new Option("上海", "0"));
+                    second.options.add(new Option("昆明", "2"));
+                    second.options.add(new Option("北京", "1", false, true));  // 默认选中区
+                }
+
+                if(first.selectedIndex == 2)
+                {
+                    second.options.add(new Option("纽约", "0"));
+                    second.options.add(new Option("华盛顿", "1", false, true));  // 默认选中区
+                    second.options.add(new Option("旧金山", "2"));
+                }
+                if(first.selectedIndex == 3)
+                {
+                    second.options.add(new Option("米兰", "0"));
+                    second.options.add(new Option("威尼斯", "1", false, true));  // 默认选中区
+                    second.options.add(new Option("罗马", "2"));
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            function disp_alert()
+            {
+                alert("你要的风格图片来了。")
+            }
+        </script>
+        <input type="button" onclick="disp_alert()" value="刷新" class="button-refresh"/>
+    </div>
+    <div class="section-photo">
+        <a href="photo.html" title="图片"><div class="photo-contain1"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain2"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain3"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain4"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain5"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain6"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain7"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain8"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain9"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain10"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain11"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain12"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain13"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain14"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain15"></div></a>
+        <a href="photo.html" title="图片"><div class="photo-contain16"></div></a>
+    </div>
+    <div class="transform-line">
+       <h4>&lt;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&gt;
+       </h4>
+    </div>
+</section>
+<footer>
+    <p>图片版权所有：19ss</p>
+    <p>联系人：xx</p>
+    &copy;
+</footer>
+</body>
+</html>

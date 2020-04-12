@@ -1,0 +1,231 @@
+@media screen and (max-width:400px ){
+    html{font-size: 14px;}
+}
+@media screen and (min-width: 400px) and (max-width: 800px){
+    html{font-size: 17px}
+}
+@media screen and (min-width:800px ){
+    html{font-size: 24px;}
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #000000;
+    background: rgba(1,1,1,.03);
+}
+nav h2 a:hover{
+    color: blue;
+}
+nav a{
+    float: left;
+    margin-right:0.4rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+header{
+    background: black;;
+    height: 1.5rem;
+    padding:2px 5px;
+}
+.nav,.plat,.plat a{
+    font-size: 0.8rem;
+    list-style: none;
+    text-decoration: none;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+    width: 5rem;
+    text-align: center;
+    border: 0px solid black;
+    margin-top: 1px;
+}
+
+.plat{
+    display: none;
+}
+.nav{
+    float: right;
+}
+.nav:hover .plat{
+    display: inline-block;
+    clear: both;
+}
+.plat li:hover>a{
+    background-color: dimgrey;
+}
+a {
+    font-size: 0.8rem;
+    color: aliceblue;
+}
+.browser{
+    background: darkgray;
+}
+.header-photo{
+    width: 1.5rem;
+    height: 1.3rem;
+    float: left;
+    margin: 5px;
+}
+.plat-photo{
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin-top: 4px;
+}
+/*以上为header区域**/
+aside{
+    margin-left: 0.4rem;
+    float: left;
+    overflow: hidden;
+}
+ul li{
+    display: block;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    color: royalblue;
+    height: 1.3rem;
+    text-align: center;
+    line-height:1.3rem ;
+    font-size: 0.6rem;
+}
+.li-title{
+    background:rgba(1,1,1,0.1);
+    margin-top: 0.8rem;
+    color: black;
+}
+input[type="text"]{
+    width: 6.2rem;
+    height: 1rem;
+    border-color: black;
+}
+.button-search{
+    height: 1.3rem;
+    background:rgba(1,1,1,0.1);
+    width: 2.1rem;
+}
+.li-content:hover{
+    background-color: rgba(1,1,1,0.3);
+}
+input[type="button"]:hover{
+    background:rgba(1,1,1,0.6); ;
+}
+/*左边栏的设计**/
+section{
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: black;
+    float: left;
+    width: 67%;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+.section-header{
+    font-family: "Arial Black";
+    background:rgba(1,1,1,0.1);
+    color: black;
+    font-size: 0.8rem;
+}
+.section-select{
+    border-style: solid;
+    border-color: rgba(0,0,0,0.3);
+    border-width: 0.3px;
+}
+.section-select select{
+    width: 6.2rem;
+    height: 1.3rem;
+    font-size: 0.6rem;
+}
+.button-refresh{
+    width:2.5rem;
+    height: 1rem;
+    background:dodgerblue;
+    font-weight: bolder;
+}
+.transform-line{
+    clear: both;
+}
+/*图片设置**/
+.section-photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 1.9rem;
+}
+.section-photo div{
+    width: 6.7rem;
+    height: 6.7rem;
+    float: left;
+    margin: 10px 10px;
+}
+.photo-contain1{
+    background-image: url("../../img/travel-images/normal/small/222222.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain2{
+    background-image: url("../../img/travel-images/normal/small/222223.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain3{
+    background-image: url("../../img/travel-images/normal/small/5855174537.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain4{
+    background-image: url("../../img/travel-images/normal/small/5855191275.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain5{
+    background-image: url("../../img/travel-images/normal/small/5855209453.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain6{
+    background-image: url("../../img/travel-images/normal/small/5855213165.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain7{
+    background-image: url("../../img/travel-images/normal/small/5855221959.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain8{
+    background-image: url("../../img/travel-images/normal/small/5855729828.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain9{
+    background-image: url("../../img/travel-images/normal/small/5855735700.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain10{
+    background-image: url("../../img/travel-images/normal/small/5855752464.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain11{
+    background-image: url("../../img/travel-images/normal/small/5855774224.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain12{
+    background-image: url("../../img/travel-images/normal/small/5856616479.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain13{
+    background-image: url("../../img/travel-images/normal/small/5856654945.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain14{
+    background-image: url("../../img/travel-images/normal/small/5856658791.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain15{
+    background-image: url("../../img/travel-images/normal/small/5856697109.jpg");
+    background-size: 100% 100%;
+}
+.photo-contain16{
+    background-image: url("../../img/travel-images/normal/small/5857298322.jpg");
+    background-size: 100% 100%;
+}
+/*以上是section的设计**/
+footer{
+    background: black;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 0.6rem;
+}
